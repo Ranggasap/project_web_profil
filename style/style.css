@@ -1,0 +1,317 @@
+.nav-link:hover{
+    color: #ddd;
+}
+
+
+
+.jumbotron-section{
+    height: 470px;
+    padding: 0 10%;
+    display: flex;
+   
+}
+
+.jumbotron-section > div{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    
+  }
+  
+.jumbotron-section h1{
+    font-size: 60px;
+    width: 360px;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  .jumbotron-section p{
+    font-size: 30px;
+    color: gray;
+  }
+  
+  .jumbotron-section > img{
+    width:50%;
+    height: 323px;;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+
+  .aboutMe-container{
+    height: 320px;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: flex;
+ 
+  }
+
+  .aboutMe-container > img{
+    width: 40%;
+    object-fit: cover;
+    padding-bottom: 20px;
+    border-radius: 5%;
+  }
+
+  .aboutMe-container > div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding-left: -10px;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  
+.aboutMe-container h2 {
+  color: black;
+  font-weight: bold;
+}
+
+.aboutMe-container p {
+  color: black;
+}
+
+.aboutMe-container > div > div {
+  width: 500px;
+
+}
+
+.aboutMe-footer > a {
+  color: white;
+}
+
+
+.portofolio-container {
+  min-height: 400px;
+  margin: 40px 0;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+.portofolio-container .card{
+  height: 100%;
+
+}
+
+.card > img{
+  object-fit: cover;
+  height: 240px;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-footer > a {
+  color: white;
+}
+
+.card{
+  box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.1);
+  transform: 0.3s;
+}
+
+.card:hover{
+  box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.card > .card-body{
+  padding: 20px;
+}
+
+.card h3{
+  font-size: 20px;
+  margin: 0 15px 0 0;
+}
+
+.card p {
+  color: var(--gray);
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+
+
+.contact-container {
+  max-height: 600px;
+  padding: 0 10%;
+  display: flex;
+}
+
+.contact-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 43%;
+  
+}
+
+.contact-container > div > div{
+  width: 400px;
+
+}
+
+.contact-container p {
+  font-size: 24px;
+}
+
+.contact-container > img {
+  width: 57%;
+  
+}
+
+.contact-container > div > .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text {
+  color: white;
+}
+
+
+.location-container {
+  height: 600px;
+  padding: 0 10%;  
+}
+
+.location-container iframe{
+  margin-left: 5px;
+}
+
+
+
+.btn {
+  display: inherit;
+}
+
+@media only screen and (max-width: 900px) {
+  .jumbotron-section {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .jumbotron-section > div {
+    width: 100%;
+    height: 270px;
+  }
+
+  .jumbotron-section > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .jumbotron-section h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 5px auto;
+    width: auto;
+  }
+
+  .jumbotron-section p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .aboutMe-container h2, .aboutMe-container p {
+    text-align: center;
+  }
+
+  .aboutMe-container > div {
+    margin-left: 0px;
+  }
+
+  .aboutMe-footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .portofolio-container {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutMe-container {
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .aboutMe-container > div {
+    width: 100%;
+    
+  }
+
+  .aboutMe-container > div > div {
+    width: 100%;
+  }
+
+  .aboutMe-container > img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .contact-container{
+    
+    flex-direction: column-reverse;
+    height: 100%;
+
+  }
+
+  .card img {
+    height: 350px;
+  }
+
+  .contact-container > div {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .contact-container > div > div {
+    width: 100%;
+  }
+
+  .contact-container > iframe {
+    width: 100%;
+  }
+
+  .contact-container h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contact-container p {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .location-container {
+    height: 900px;
+    width: 100%;
+    padding: 0 10%; 
+    position: relative; 
+  }
+
+  .location > iframe {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+
+}
